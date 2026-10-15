@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#173d32">
+  <meta name="description" content="Discover your next favourite read at BookVerse. Explore fiction, classics, personal growth and more.">
+  <title>BookVerse — Find Your Next Favourite</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="announcement"><p>Thoughtful reads. Better days. <span>Free shipping on orders over ₹999</span></p></div>
+  <header class="site-header" id="top">
+    <div class="header-main container">
+      <button class="icon-button mobile-menu-button" id="mobileMenuButton" aria-label="Open navigation" aria-expanded="false" aria-controls="primaryNav"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+      <a class="brand" href="#top" aria-label="BookVerse home"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M5 7.5c4.5-1.4 8-.6 11 2.1v16c-3-2.7-6.5-3.5-11-2.1z"/><path d="M27 7.5c-4.5-1.4-8-.6-11 2.1v16c3-2.7 6.5-3.5 11-2.1z"/><path d="M16 9.6v16"/></svg></span><span class="brand-name">book<span>verse</span><small>THE ART OF READING</small></span></a>
+      <form class="search-form" id="searchForm" role="search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 4.2 4.2"/></svg><input id="searchInput" type="search" placeholder="Search books, authors, genres..." autocomplete="off" aria-label="Search books"><button type="submit">Search</button></form>
+      <div class="header-actions"><button class="text-action" id="wishlistShortcut" type="button" aria-label="Show saved books"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 8.7c0 5.2-8.8 10.2-8.8 10.2S3.2 13.9 3.2 8.7A4.7 4.7 0 0 1 12 6.4a4.7 4.7 0 0 1 8.8 2.3Z"/></svg><span>Saved</span></button><button class="cart-trigger" id="cartTrigger" type="button" aria-label="Open shopping bag, 0 items"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l1 12H4L5 8Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg><span class="cart-label">Bag</span><span class="cart-count" id="cartCount">0</span></button></div>
+    </div>
+    <nav class="primary-nav" id="primaryNav" aria-label="Main navigation"><div class="container nav-inner"><a href="#catalogue" data-nav-category="All">Discover</a><a href="#catalogue" data-nav-category="Fiction">Fiction</a><a href="#catalogue" data-nav-category="Classics">Classics</a><a href="#catalogue" data-nav-category="Personal Growth">Personal growth</a><a href="#catalogue" data-nav-category="Mystery">Mystery &amp; thrillers</a><a href="#catalogue" data-nav-category="Non-fiction">Non-fiction</a><a href="#staff-picks">Staff picks</a></div></nav>
+  </header>
+  <main>
+    <section class="hero container" aria-labelledby="heroTitle">
+      <div class="hero-copy"><span class="eyebrow"><span class="eyebrow-dot"></span> YOUR NEXT CHAPTER STARTS HERE</span><h1 id="heroTitle">A little more <em>wonder</em><br class="desktop-break"> in every day.</h1><p>Find stories that stay with you, ideas that move you, and pages you’ll want to turn forever.</p><div class="hero-actions"><a class="button button-primary" href="#catalogue">Explore the collection <span aria-hidden="true">↗</span></a><a class="text-link" href="#staff-picks">Meet the staff picks <span aria-hidden="true">→</span></a></div><div class="hero-proof"><div class="avatar-stack" aria-hidden="true"><span>R</span><span>A</span><span>M</span></div><p><strong>For curious minds</strong><br><span>Carefully picked, always.</span></p></div></div>
+      <div class="hero-art" aria-label="A curated stack of books"><div class="hero-sun"></div><div class="hero-note"><span>THE READING LIST</span><strong>Stories to<br>come back to.</strong><span class="note-line"></span><small>Vol. 01 / 2026</small></div><div class="hero-book hero-book-back"><div class="mock-cover cover-blue"><small>THE ART OF</small><strong>Slow<br>Living</strong><span>MAKE ROOM FOR WHAT MATTERS</span></div></div><div class="hero-book hero-book-mid"><div class="mock-cover cover-terracotta"><small>A NOVEL</small><strong>Wild<br>Places</strong><span>ELENA MORROW</span></div></div><div class="hero-book hero-book-front"><div class="mock-cover cover-green"><span class="cover-star">✳</span><small>THE MODERN CLASSIC</small><strong>Things<br>Unsaid</strong><span>J. W. HART</span></div></div><div class="hero-sticker"><span>✦</span> GOOD BOOKS,<br>GOOD COMPANY</div></div>
+    </section>
+    <section class="benefit-strip container" aria-label="BookVerse benefits"><div class="benefit-item"><span class="benefit-icon">✳</span><div><strong>Thoughtfully chosen</strong><small>Books worth your time</small></div></div><div class="benefit-item"><span class="benefit-icon">↗</span><div><strong>Easy discovery</strong><small>Your next favourite is here</small></div></div><div class="benefit-item"><span class="benefit-icon">♡</span><div><strong>Made for readers</strong><small>A little joy in every parcel</small></div></div></section>
+    <section class="catalogue-section container" id="catalogue">
+      <div class="section-heading"><div><span class="eyebrow">A SHELF FOR EVERY MOOD</span><h2>Find your kind of story<span class="heading-period">.</span></h2><p class="section-subtitle">From page-turners to perspective-shifters.</p></div><label class="sort-control" for="sortSelect"><span>Sort by</span><select id="sortSelect"><option value="featured">Featured</option><option value="price-low">Price: low to high</option><option value="price-high">Price: high to low</option><option value="title">Title: A to Z</option></select></label></div>
+      <div class="category-scroller" id="categoryFilters" aria-label="Filter books by category"><button class="category-chip is-active" type="button" data-category="All" aria-pressed="true">All books <span>12</span></button><button class="category-chip" type="button" data-category="Fiction" aria-pressed="false">Fiction</button><button class="category-chip" type="button" data-category="Classics" aria-pressed="false">Classics</button><button class="category-chip" type="button" data-category="Personal Growth" aria-pressed="false">Personal growth</button><button class="category-chip" type="button" data-category="Mystery" aria-pressed="false">Mystery</button><button class="category-chip" type="button" data-category="Non-fiction" aria-pressed="false">Non-fiction</button></div>
+      <div class="catalogue-meta"><p id="resultsLabel" aria-live="polite">Showing all books</p><button class="clear-filters" id="clearFilters" type="button" hidden>Clear filters <span aria-hidden="true">×</span></button></div>
+      <div class="book-grid" id="bookGrid" aria-live="polite"></div>
+      <div class="empty-state" id="emptyState" hidden><span class="empty-icon">⌕</span><h3>No books found just yet</h3><p>Try a different title, author, or category.</p><button class="button button-outline" id="resetSearch" type="button">Show all books</button></div>
+    </section>
+    <section class="staff-section" id="staff-picks"><div class="container staff-inner"><div class="staff-copy"><span class="eyebrow eyebrow-light">THE BOOKVERSE EDIT</span><h2>Good books have a way of finding you.</h2><p>Our little reading corner is built around books that open up new worlds, spark a thought, or make a quiet evening feel special.</p><a class="button button-light" href="#catalogue" data-nav-category="Personal Growth">Explore staff picks <span aria-hidden="true">→</span></a></div><div class="staff-quote"><span class="quote-mark">“</span><blockquote>A book is a place you can visit whenever you need a different kind of quiet.</blockquote><span class="quote-credit">A NOTE FROM OUR READING ROOM</span><div class="quote-decoration" aria-hidden="true">✳</div></div></div></section>
+    <section class="newsletter-section container"><div class="newsletter-icon" aria-hidden="true">✉</div><div class="newsletter-copy"><span class="eyebrow">A NOTE FOR YOUR INBOX</span><h2>Make room for a good read.</h2><p>New arrivals, reading lists, and little things we love. No noise.</p></div><form class="newsletter-form" id="newsletterForm"><label class="visually-hidden" for="newsletterEmail">Email address</label><input id="newsletterEmail" type="email" placeholder="Your email address" autocomplete="email" required><button class="button button-primary" type="submit">Count me in <span aria-hidden="true">→</span></button><small>Your email is saved only in this browser for this demo. Nothing is sent to a server.</small></form></section>
+  </main>
+  <footer class="site-footer"><div class="container footer-main"><div class="footer-brand"><a class="brand brand-footer" href="#top"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M5 7.5c4.5-1.4 8-.6 11 2.1v16c-3-2.7-6.5-3.5-11-2.1z"/><path d="M27 7.5c-4.5-1.4-8-.6-11 2.1v16c3-2.7 6.5-3.5 11-2.1z"/><path d="M16 9.6v16"/></svg></span><span class="brand-name">book<span>verse</span><small>THE ART OF READING</small></span></a><p>For the stories you tell, and the ones that change you.</p></div><div class="footer-column"><strong>Explore</strong><a href="#catalogue">All books</a><a href="#catalogue" data-nav-category="Fiction">Fiction</a><a href="#catalogue" data-nav-category="Classics">Classics</a><a href="#staff-picks">Staff picks</a></div><div class="footer-column"><strong>Need a hand?</strong><a href="mailto:hello@bookverse.example">Contact us</a><a href="#newsletterForm">Reading newsletter</a><a href="#top">Back to top ↑</a><button class="footer-data-button" id="openLocalData" type="button">View / clear local data</button></div><div class="footer-note"><span>READ A LITTLE.</span><span>FEEL A LOT.</span><div>✳</div></div></div><div class="container footer-bottom"><span>© <span id="currentYear"></span> BookVerse. Made for the love of reading.</span><span>Demo storefront · No real payments are processed.</span></div></footer>
+  <section class="dialog-backdrop" id="checkoutBackdrop" hidden>
+    <div class="dialog-card checkout-dialog" role="dialog" aria-modal="true" aria-labelledby="checkoutDialogTitle">
+      <div class="dialog-heading"><div><span class="eyebrow">DEMO CHECKOUT</span><h2 id="checkoutDialogTitle">A few details, then you’re done.</h2></div><button class="icon-button" id="closeCheckout" type="button" aria-label="Close checkout">×</button></div>
+      <p class="dialog-intro">This creates a sample order stored in this browser only. No payment is taken and no details are sent anywhere. Use test details if you prefer.</p>
+      <form id="checkoutForm" class="checkout-form">
+        <div class="form-field"><label for="customerName">Full name</label><input id="customerName" name="name" autocomplete="name" maxlength="80" required placeholder="Your name"></div>
+        <div class="form-field"><label for="customerEmail">Email address</label><input id="customerEmail" name="email" type="email" autocomplete="email" maxlength="120" required placeholder="you@example.com"></div>
+        <div class="form-field"><label for="customerPhone">Phone (optional)</label><input id="customerPhone" name="phone" type="tel" autocomplete="tel" inputmode="tel" maxlength="20" placeholder="For demo only"></div>
+        <div class="form-field full-field"><label for="customerAddress">Delivery address (demo)</label><textarea id="customerAddress" name="address" autocomplete="street-address" maxlength="240" rows="2" required placeholder="Enter a sample address"></textarea></div>
+        <div class="checkout-summary" id="checkoutSummary"></div>
+        <label class="local-consent"><input id="saveProfileConsent" type="checkbox" checked> Save these details in this browser so they’re filled in next time.</label>
+        <button class="button button-primary dialog-submit" type="submit">Place demo order <span aria-hidden="true">→</span></button>
+      </form>
+    </div>
+  </section>
+
+  <section class="dialog-backdrop" id="localDataBackdrop" hidden>
+    <div class="dialog-card data-dialog" role="dialog" aria-modal="true" aria-labelledby="localDataTitle">
+      <div class="dialog-heading"><div><span class="eyebrow">YOUR DEVICE, YOUR DATA</span><h2 id="localDataTitle">Local demo data</h2></div><button class="icon-button" id="closeLocalData" type="button" aria-label="Close local data">×</button></div>
+      <p class="dialog-intro">This information is stored in this browser’s localStorage on this device for the BookVerse demo. It is not uploaded to a server. Anyone using this browser profile may be able to view it.</p>
+      <div id="localDataSummary" class="local-data-summary"></div>
+      <div class="data-dialog-actions"><button class="button button-outline" id="exportLocalData" type="button">Export my data</button><button class="button button-danger" id="clearLocalData" type="button">Clear all local data</button></div>
+      <p class="local-data-footnote">Clearing removes the saved cart, saved books, profile, newsletter signup and demo order history for this site in this browser.</p>
+    </div>
+  </section>
+
+  <div class="scrim" id="scrim" hidden></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-labelledby="cartTitle" aria-hidden="true" inert><div class="drawer-header"><div><span class="eyebrow">YOUR READING LIST</span><h2 id="cartTitle">Your bag <span id="drawerCount">(0)</span></h2></div><button class="icon-button close-drawer" id="closeCart" type="button" aria-label="Close shopping bag"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button></div><div class="cart-content" id="cartContent"></div><div class="cart-footer" id="cartFooter"><div class="subtotal-row"><span>Subtotal</span><strong id="cartSubtotal">₹0</strong></div><p class="shipping-note" id="shippingNote">Shipping calculated at checkout.</p><button class="button button-primary checkout-button" id="checkoutButton" type="button">Continue to checkout <span aria-hidden="true">→</span></button><p class="checkout-disclaimer">Demo only — checkout and payment are not connected.</p></div></aside>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
